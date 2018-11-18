@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="#">
+        <img src="img/index-logo.svg" width="100" height="150" alt="Логотип студии Nedr's">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Студия</a></li>
+        <li><a href="customers.html">Клиенты</a></li>
+        <li><a href="shop.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="basket">Корзина</li>
+      </ul>
+    </nav>
+    <!-- Будет слайдер -->
+  </header>
+  <main class="container">
+    <h1 class="visually-hidden">Студия Nerd's</h1>
+
+    <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="services-list">
+        <li class="services-item">
+          <img src="http://lala.ii/150x100" width="100" height="150" alt="Веб-сайты">
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того, как увидит наш сайт!</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+        <li class="services-item">
+          <img src="http://lasa.ii/150x100" width="100" height="150" alt="Приложения">
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+        <li class="services-item">
+          <img src="http://laaa.ii/150x100" width="100" height="150" alt="Презентации">
+          <h3>Презентация</h3>
+          <p>Вы даже не представляете, насколько вы изумительны!</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="about us">
+      <h2 class="visually-hidden">О компании</h2>
+      <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не
+        покладая рук, как роботы.</p>
+      <h3>Выполняем заказы на разработку</h3>
+      <ul class="order">
+        <li class="order-option">Веб-сайтов любой сложности</li>
+        <li class="order-option">Мобильных приложений для iOS и Android</li>
+        <li class="order-option">Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </section>
+
+    <section class="statistics">
+      <h2 class="visually-hidden">Статистика</h2>
+      <img src="img/index-logo1.svg" width="100" height="150" alt="Логотип студии Nedr's">
+      <p>С 2014 года любим точность во всем</p>
+      <table class="statistics-table">
+        <tr>
+          <td>146%</td>
+          <td>100%</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="partners">
+      <h2 class="visually-hidden">Партнеры студии</h2>
+      <ul class="gallery-content">
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/partners.jpg" width="100" height="80" alt="HTML-Академия"></a></li>
+        <li><a href="#"><img src="img/partners1.jpg" width="100" height="80" alt="Барбешоп Бородинский"></a></li>
+        <li><a href="#"><img src="img/partners2.jpg" width="100" height="80" alt="PINK"></a></li>
+        <li><a href="#"><img src="img/partners3.jpg" width="100" height="80" alt="MISHKA"></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <!-- карта -->
+    <span></span>
+
+    <section class="footer-contacts">
+      <h4>Nerds design studio</h4>
+      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p>тел.: +7 (812) 275-75-75</p>
+      <button type="button" class="button">Напишите нам</button>
+    </section>
+
+    <section class="footer-social">
+      <h4 class="visually-hidden">Ссылки на социальные сети</h4>
+      <ul class="social">
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+      <p><b>Давайте дружить, это выгодно!</b></p>
+      <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+</body>
+
 </html>
