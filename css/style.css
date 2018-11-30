@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+  margin: 0;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  opacity: 0.3;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 25px;
+  line-height: 1.29;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button {
+  font: inherit;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+}
+
+.green-button {
+  background-color: #00ca74;
+}
+
+.green-button:hover,
+.button:focus {
+  background-color: #00bc6c;
+}
+
+.green-button:active {
+  background-color: #00aa62;
+}
+
+.yellow-button {
+  background-color: #efc84a;
+}
+
+.yellow-button:hover,
+.button:focus {
+  background-color: #eab534;
+}
+
+.yellow-button:active {
+  background-color: #e5a722;
+}
+
+.container {
+  color: #000000;
+
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.about-company-text h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-company-text b {
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.about-company-statistics p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 45px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+sup {
+  font-size: 26px;
+  line-height: 0.22;
+  font-weight: 700;
+}
+
+.indicator {
+  font-size: 16px;
+  line-height: 1.13;
+  font-weight: 400;
+  color: #283136;
+}
+
+.gallery-content {
+  list-style: none;
+}
+
+.gallery-content img {
+  opacity: 0.2;
+  list-style: none;
+}
+
+.gallery-content img:hover,
+.gallery-content img:focus {
+  opacity: 1;
+}
+
+.map-contacts p,
+.map-contacts a {
+  font-size: 16px;
+  line-height: 1.125;
+  font-weight: 400;
+  color: #666666;
+}
+
+.map-contacts h3 {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  font-size: 16px;
+  line-height: 1.38;
+  font-weight: 400;
+}
+
+.main-footer b {
+  font-size: 35px;
+  line-height: 1;
+  font-weight: 700;
+  color: #444444;
+}
+
+.social,
+.social-button {
+  list-style: none;
+  color: #000000
+}
+
+/*catalog.html*/
+
+.page-title {
+  font-size: 54px;
+  line-height: 1;
+  font-weight: 500;
+
+  background-color: #eeeeee;
+}
+
+.page-title h1 {
+  margin: 0;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-item-description {
+  font-size: 16px;
+  line-height: 1.13;
+  font-weight: 400;
+  color: #666666;
+}
