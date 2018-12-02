@@ -16,6 +16,17 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .main-navigation {
   font-size: 18px;
   line-height: 1.8;
@@ -49,13 +60,13 @@ a {
   opacity: 0.3;
 }
 
-.main-navigation img:hover,
-.main-navigation img:focus {
+.main-header-logo:hover,
+.main-header-logo:focus {
   opacity: 0.8;
 }
 
-.main-navigation img:active {
-    opacity: 0.3;
+.main-header-logo:active {
+  opacity: 0.3;
   }
 
 .services-list {
@@ -100,7 +111,7 @@ a {
 }
 
 .green-button:hover,
-.button:focus {
+.green-button:focus {
   background-color: #00bc6c;
 }
 
@@ -113,7 +124,7 @@ a {
 }
 
 .yellow-button:hover,
-.button:focus {
+.yellow-button:focus {
   background-color: #eab534;
 }
 
@@ -179,6 +190,10 @@ sup {
   opacity: 1;
 }
 
+.gallery-content img:active {
+  opacity: 0.1;
+}
+
 .map-contacts p,
 .map-contacts a {
   font-size: 16px;
@@ -216,14 +231,14 @@ sup {
 /*catalog.html*/
 
 .page-title {
-  font-size: 54px;
-  line-height: 1;
-  font-weight: 500;
-
   background-color: #eeeeee;
 }
 
 .page-title h1 {
+  font-size: 54px;
+  line-height: 1;
+  font-weight: 500;
+
   margin: 0;
 }
 
