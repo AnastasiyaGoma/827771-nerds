@@ -49,6 +49,15 @@ a {
   opacity: 0.3;
 }
 
+.main-navigation img:hover,
+.main-navigation img:focus {
+  opacity: 0.8;
+}
+
+.main-navigation img:active {
+    opacity: 0.3;
+  }
+
 .services-list {
   list-style: none;
 }
