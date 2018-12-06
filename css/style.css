@@ -1,5 +1,12 @@
+html {
+  min-width: 1440px;
+  min-height: 2476px;
+}
+
 body {
   margin: 0;
+  min-width: 1440px;
+  min-height: 2476px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -28,6 +35,9 @@ a {
   }
 
 .main-navigation {
+  display: flex;
+  justify-content: center;
+
   font-size: 18px;
   line-height: 1.8;
   font-weight: 500;
@@ -37,11 +47,29 @@ a {
   background-color: #eeeeee;
 }
 
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 18px;
+  margin-top: 49px;
+}
+
+.container .main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  }
+
 .site-navigation,
 .user-navigation {
-  list-style: none;
   margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
 }
+
+.site-navigation {
+  width: 440px;
+  }
 
 .site-navigation a,
 .user-navigation a {
@@ -60,6 +88,17 @@ a {
   opacity: 0.3;
 }
 
+.user-navigation {
+  width: 80px;
+}
+
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+}
+
 .main-header-logo:hover,
 .main-header-logo:focus {
   opacity: 0.8;
@@ -69,19 +108,38 @@ a {
   opacity: 0.3;
   }
 
+.services {
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
 .services-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
   list-style: none;
 }
 
 .services-item {
-  text-align: center;
-}
+  width: 300px;
+  margin-bottom: 30px;
+  }
+
+.services-item p{
+  margin-bottom: 35px;
+  }
 
 .services-item h3 {
   font-size: 25px;
   line-height: 1.29;
   font-weight: bold;
   text-transform: uppercase;
+
+  margin-bottom: 26px;
 }
 
 .button {
@@ -133,13 +191,39 @@ a {
 }
 
 .container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container-big {
   color: #000000;
 
   background-position: 0 0;
   background-repeat: repeat;
 }
 
+.top-background {
+  background-color: #eeeeee;
+}
+
+.about-company .container {
+  display: flex;
+  justify-content: space-between;
+  }
+
+.about-company-text {
+  margin: 0;
+  margin-bottom: 76px;
+  padding: 0;
+  width: 700px;
+}
+
 .about-company-text h3 {
+  margin: 0;
+  margin-bottom: 47px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 1.5;
   font-weight: 700;
@@ -147,14 +231,43 @@ a {
 }
 
 .about-company-text b {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
   font-size: 45px;
   line-height: 1;
   font-weight: 500;
 }
 
+.about-company-text p{
+  margin: 0;
+  margin-bottom: 76px;
+  padding: 0;
+}
+
+.about-company-statistics {
+  margin: 0;
+  margin-bottom: 76px;
+  padding: 0;
+  text-align: center;
+  width: 360px;
+}
+
 .about-company-statistics p {
+  margin: 0;
+  margin-top: 41px;
+  margin-bottom: 49px;
+  padding: 0;
+
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.statistics-table {
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .value {
@@ -176,7 +289,19 @@ sup {
   color: #283136;
 }
 
+.partners {
+  margin-bottom: 132px;
+  padding: 0;
+}
+
 .gallery-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 1100px;
+
   list-style: none;
 }
 
@@ -194,15 +319,39 @@ sup {
   opacity: 0.1;
 }
 
-.map-contacts p,
-.map-contacts a {
+.map h3 {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.map p {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+}
+
+.contacts {
+  margin: 0;
+  margin-bottom: 123px;
+  padding: 0;
+  text-align: center;
+  width: 319px;
+}
+
+.contacts .button {
+  margin-top: 37px;
+}
+
+.contacts p,
+.contacts a {
   font-size: 16px;
   line-height: 1.125;
   font-weight: 400;
   color: #666666;
 }
 
-.map-contacts h3 {
+.contacts h3 {
   font-size: 18px;
   line-height: 1.8;
   font-weight: 700;
@@ -215,7 +364,14 @@ sup {
   font-weight: 400;
 }
 
-.main-footer b {
+.main-footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.frends b {
+  margin-bottom: 12px;
+
   font-size: 35px;
   line-height: 1;
   font-weight: 700;
@@ -231,10 +387,12 @@ sup {
 /*catalog.html*/
 
 .page-title {
-  background-color: #eeeeee;
+  padding: 82px;
 }
 
 .page-title h1 {
+  text-align: center;
+
   font-size: 54px;
   line-height: 1;
   font-weight: 500;
@@ -242,8 +400,42 @@ sup {
   margin: 0;
 }
 
+section .product-selection {
+  margin: 0;
+  padding: 0;
+  width: 1160px;
+}
+
+.filter {
+  width: 260px;
+}
+
+.sorting-catalog {
+  margin: 0;
+  padding: 0;
+  width: 760px;
+}
+
+.product-selection .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+}
+
+.catalog-item:nth-child(even) {
+    margin-left: 40px;
 }
 
 .catalog-item a {
@@ -260,3 +452,56 @@ sup {
   font-weight: 400;
   color: #666666;
 }
+
+.catalog-item-info {
+  text-align: center;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* Сеточные стили */
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
