@@ -10,22 +10,20 @@
 </head>
 
 <body>
-  <header class="main-header container-big top-background">
+  <header class="main-header top-background">
     <nav class="main-navigation container">
-      <div class="main-navigation-wrapper">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="index.html">Клиенты</a></li>
-          <li><a class="site-navigation-current" href="shop.html">Магазин</a></li>
-          <li><a href="index.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a class="basket" href="#">Корзина</a></li>
-        </ul>
-      </div>
+      <a class="main-header-logo" href="index.html">
+        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Студия</a></li>
+        <li><a href="customers.html">Клиенты</a></li>
+        <li><a class="active-navigation" href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li><a class="basket" href="#">Корзина</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -42,13 +40,100 @@
       <div class="container">
         <div class="filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- Здесь будет форма -->
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-item">
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="adaptive"
+                    id="name-adaptive" checked>
+                  <label for="name-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="fix"
+                    id="name-fix">
+                  <label for="name-fix">Фиксированная</label>
+                </li>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="rubber"
+                    id="name-rubber">
+                  <label for="name-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-item">
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature-slider"
+                    id="name-slider" checked>
+                  <label for="name-slider">Слайдер</label>
+                </li>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature-advantage"
+                    id="name-advantage">
+                  <label for="name-advantage">Блок преимуществ</label>
+                </li>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" value="feature-news"
+                    id="name-news" checked>
+                  <label for="name-news">Новости</label>
+                </li>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery"
+                    value="feature-gallery" id="name-gallery">
+                  <label for="name-gallery">Галерея</label>
+                </li>
+                <li class="filter-grid">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" value="feature-basket"
+                    id="name-basket">
+                  <label for="name-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <a class="button grey-button" href="#"><span class="transparent">Показать</span></a>
+          </form>
         </div>
 
         <div class="sorting-catalog">
           <div class="sorting-form">
             <h2 class="visually-hidden">Сортировка товара</h2>
-            <!-- Здесь будет форма -->
+            <h3>Сортировать:</h3>
+            <ul class="sorting">
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По названию</a>
+              </li>
+            </ul>
+            <ul class="user-sorting">
+              <li>
+                <a class="sorting-down"></a>
+              </li>
+              <li>
+                <a class="sorting-up active-sorting"></a>
+              </li>
+            </ul>
           </div>
           <div class="template">
             <h2 class="visually-hidden">Выбор вариантов шаблонов</h2>
@@ -59,7 +144,7 @@
                   <h3 class="catalog-item-name">
                     <a href="#">Sedona</a>
                   </h3>
-                  <p class="catalog-item-description">Информационный сайт для туристов</p>
+                  <p class="catalog-item-description">Информационный сайт<br>для туристов</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -69,7 +154,7 @@
                   <h3 class="catalog-item-name">
                     <a href="#">Pink App</a>
                   </h3>
-                  <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+                  <p class="catalog-item-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -79,7 +164,7 @@
                   <h3 class="catalog-item-name">
                     <a href="#">Barbershop</a>
                   </h3>
-                  <p class="catalog-item-description">Сайт салона красоты.Для мужчин, да.</p>
+                  <p class="catalog-item-description">Сайт салона красоты. <br>Для мужчин, да.</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -89,7 +174,7 @@
                   <h3 class="catalog-item-name">
                     <a href="#">Mishka</a>
                   </h3>
-                  <p class="catalog-item-description">Интернет-магазин вязанных игрушек</p>
+                  <p class="catalog-item-description">Интернет-магазин<br>вязанных игрушек</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -99,7 +184,7 @@
                   <h3 class="catalog-item-name">
                     <a href="#">A Plus</a>
                   </h3>
-                  <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
+                  <p class="catalog-item-description">Лендинг курсов повышения<br> квалификации</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -109,54 +194,54 @@
                   <h3 class="catalog-item-name">
                     <a href="#">Kваст</a>
                   </h3>
-                  <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
+                  <p class="catalog-item-description">Промо-сайт производителя<br>крафтового кваса</p>
                   <a class="button" href="#">9 900 руб.</a>
                 </div>
               </li>
             </ul>
             <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current">1</li>
+              <li class="pagination-item pagination-item-current"><a>1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item"><a href="#">Следующая</a></li>
+              <li class="pagination-item pagination-item-long"><a href="#">Следующая</a></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="map-contacts">
-      <div class="container-big">
-        <h2 class="visually-hidden">Карта и контакты студии</h2>
-
-        <div class="map">
-          <img src="img/2-layers.png" width="1440" height="416" alt="Карта студии">
-        </div>
+    <section class="contacts-map">
+      <h2 class="visually-hidden">Карта и контакты студии</h2>
+      <div class="map container">
         <div class="contacts">
           <h3>Nerds design studio</h3>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <button type="button" class="button">Напишите нам</button>
+          <button class="button" type="button"><span class="transparent">Напишите нам</span></button>
         </div>
       </div>
+      <img src="img/2-layers.png" width="1440" height="416" alt="Карта студии">
     </section>
   </main>
 
 
-  <footer class="main-footer">
-    <div class="container">
-      <div class="icons">
-        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-        <ul class="social">
-          <li><a class="social-button" href="https://vk.com"><span class="visually-hidden">Нёрдс Вконтакте</span></a></li>
-          <li><a class="social-button" href="https://facebook.com"><span class="visually-hidden">Нёрдс на Фейсбук</span></a></li>
-          <li><a class="social-button" href="https://instagram.com"><span class="visually-hidden">Нёрдс в Инстаграм</span></a></li>
-        </ul>
-      </div>
-      <div class="frends">
-        <p><b>Давайте дружить, это выгодно!</b></p>
-        <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+  <footer class="main-footer container">
+
+    <div class="icons">
+      <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+      <ul class="social">
+        <li><a class="social-button social-button-vk" href="https://vk.com"><span class="visually-hidden">Нёрдс
+              Вконтакте</span></a></li>
+        <li><a class="social-button social-button-fb" href="https://facebook.com"><span class="visually-hidden">Нёрдс
+              на Фейсбук</span></a></li>
+        <li><a class="social-button social-button-insta" href="https://instagram.com"><span class="visually-hidden">Нёрдс
+              в Инстаграм</span></a></li>
+      </ul>
+    </div>
+
+    <div class="friends">
+      <p><b>Давайте дружить, это выгодно!</b></p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
 </body>
