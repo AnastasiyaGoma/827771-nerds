@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -322,6 +327,7 @@ a {
 
 .button:active {
   background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .button:active .transparent {
@@ -601,6 +607,7 @@ sup {
 
 .social-button:active::before {
   background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .social-button-vk::before {
@@ -814,25 +821,27 @@ sup {
   left: -38px;
   top: 0;
 
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
 
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter-input+label::before {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .filter-input+label::after {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
-.filter-input:hover+label,
-.filter-input:focus+label {
-  color: #283136;
+.filter-input+label:hover:before,
+.filter-input+label:focus:before,
+.filter-input+label:hover:after,
+.filter-input+label:focus:after {
+  opacity: 1;
 }
 
 .grey-button {
@@ -1085,11 +1094,13 @@ sup {
 .pagination-item a:hover,
 .pagination-item a:focus {
   background-color: #dfdfdf;
-  border: 2px solid #dbdbdb;
+  border: 2px solid #dfdfdf;
 }
 
 .pagination-item a:active {
+  background-color: #d5d5d5;
   opacity: 0.3;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /* Сеточные стили */
