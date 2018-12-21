@@ -44,17 +44,17 @@
           <li class="slider-item">
             <h3>Долго, дорого,<br> скрупулезно.</h3>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="#"><span class="transparent">Узнать больше</span></a>
+            <a class="button" href="#">Узнать больше</a>
           </li>
           <li class="slider-item">
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="button" href="#"><span class="transparent">Узнать больше</span></a>
+            <a class="button" href="#">Узнать больше</a>
           </li>
           <li class="slider-item">
             <h3>Только ночь,<br> только хардкор</h3>
             <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-            <a class="button" href="#"><span class="transparent">Узнать больше</span></a>
+            <a class="button" href="#">Узнать больше</a>
           </li>
         </ul>
       </div>
@@ -69,7 +69,7 @@
             </figure>
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним<br>после того, как увидит наш сайт!</p>
-            <a class="button" href="#"><span class="transparent">Заказать</span></a>
+            <a class="button" href="#">Заказать</a>
           </li>
           <li class="services-item">
             <figure>
@@ -77,7 +77,7 @@
             </figure>
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button green-button" href="#"><span class="transparent">Заказать</span></a>
+            <a class="button green-button" href="#">Заказать</a>
           </li>
           <li class="services-item">
             <figure>
@@ -85,7 +85,7 @@
             </figure>
             <h3>Презентация</h3>
             <p>Вы даже не представляете,<br>насколько вы изумительны!</p>
-            <a class="button yellow-button" href="#"><span class="transparent">Заказать</span></a>
+            <a class="button yellow-button" href="#">Заказать</a>
           </li>
         </ul>
     </section>
@@ -144,8 +144,8 @@
           <div class="contacts">
             <h3>Nerds design studio</h3>
             <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-            <br><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            <button class="button" type="button"><span class="transparent">Напишите нам</span></button>
+            <br><a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="button" href="form.html ">Напишите нам</a>
           </div>
         </div>
         <img src="img/2-layers.png" width="1440" height="416" alt="Карта студии">
@@ -168,6 +168,27 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
   </footer>
+
+  <section class="modal">
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <h2>Напишите нам</h2>
+    <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-item">
+        <label for="name-surname">Ваше имя:<br></label>
+        <input type="text" name="user-name" id="name-surname" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal-item">
+        <label for="email">Ваш e-mail:<br></label>
+        <input type="text" name="user-email" id="email" placeholder="email@example.com">
+      </p>
+      <p class="modal-item">
+        <label for="letter">Текст письма:<br></label>
+        <textarea id="letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
+    
 </body>
 
 </html>
