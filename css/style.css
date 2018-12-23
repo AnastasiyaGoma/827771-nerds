@@ -198,19 +198,19 @@ img {
 }
 
 .slider-item:nth-child(1) {
-  background-image: url("../img/slide1.png");
+  background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("../img/slide2.png");
+  background-image: url("../img/slide-2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("../img/slide3.png");
+  background-image: url("../img/slide-3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -432,6 +432,11 @@ button,
   margin-bottom: 76px;
   padding: 0;
   text-align: center;
+}
+
+.about-company-statistics figure {
+  margin: 0;
+  padding: 0;
 }
 
 .about-company-statistics p {
@@ -906,6 +911,7 @@ sup {
 .grey-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .sorting-catalog {
@@ -982,12 +988,8 @@ sup {
 }
 
 .catalog-item a {
+  width: 200px;
   margin: 0;
-
-  font-size: 18px;
-  line-height: 1.8;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .item-name {
@@ -1137,14 +1139,15 @@ sup {
 
 .pagination-item a {
   display: block;
-  padding-top: 19px;
+  box-sizing: border-box;
+  height: 50px;
+  padding-top: 17px;
   padding-right: 21px;
   padding-bottom: 19px;
-  padding-left: 21px;
+  padding-left: 20px;
 
   color: #000000;
   background-color: #eeeeee;
-  border: 2px solid #eeeeee;
   border-radius: 3px;
 }
 
@@ -1162,7 +1165,6 @@ sup {
 .pagination-item a:hover,
 .pagination-item a:focus {
   background-color: #dfdfdf;
-  border: 2px solid #dfdfdf;
 }
 
 .pagination-item a:active {
@@ -1174,15 +1176,15 @@ sup {
 
 /* Сеточные стили */
 
-figure {
+.services-list figure {
   margin: 0;
   padding: 0;
 }
 
 .modal {
   position: fixed;
-  top: 45%;
-  left: 15%;
+  top: 10%;
+  left: 50%;
   z-index: 200;
 
   display: none;
@@ -1195,6 +1197,7 @@ figure {
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  transform: translate(-50%);
 }
 
 .modal-close {
@@ -1223,7 +1226,7 @@ figure {
   opacity: 0.1;
 }
 
-.modal h2{
+.modal h2 {
   margin: 0;
   margin-bottom: 49px;
 
@@ -1274,7 +1277,10 @@ figure {
 }
 
 .modal-item textarea {
+  resize: vertical;
   width: 760px;
+  min-height: 120px;
+  max-height: 200px;
 }
 
 .modal-item input:hover,
