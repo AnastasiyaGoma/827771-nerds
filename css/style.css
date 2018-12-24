@@ -36,12 +36,17 @@ img {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   padding-bottom: 18px;
   padding-top: 83px;
@@ -91,9 +96,15 @@ img {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 455px;
   margin: 0;
 }
@@ -151,7 +162,9 @@ img {
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .slider-controls label {
@@ -270,8 +283,12 @@ img {
 }
 
 .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 1100px;
   margin: 0;
   margin-top: 80px;
@@ -297,7 +314,6 @@ img {
   text-transform: uppercase;
 }
 
-button,
 .button {
   display: block;
   width: 240px;
@@ -325,7 +341,8 @@ button,
 .button:active {
   background-color: #d7373b;
   color: rgba(255,255,255,0.3);
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .green-button {
@@ -359,8 +376,12 @@ button,
 }
 
 .about-company .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   padding-top: 75px;
 
@@ -461,7 +482,7 @@ button,
   font-weight: 700;
 }
 
-sup {
+.percent {
   font-size: 26px;
   line-height: 0.22;
   font-weight: 700;
@@ -484,9 +505,17 @@ sup {
 }
 
 .gallery-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
 
@@ -508,7 +537,7 @@ sup {
   height: 52px;
   margin-top: -26px;
 
-  border: 2px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .gallery-content li:first-child::before {
@@ -546,6 +575,7 @@ sup {
   top: 54px;
   left: 0;
 
+  width: 214px;
   padding-top: 54px;
   padding-right: 50px;
   padding-bottom: 47px;
@@ -579,7 +609,13 @@ sup {
   text-transform: uppercase;
 }
 
+.write-us {
+  width: 219px;
+}
+
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   margin-top: 70px;
@@ -614,8 +650,11 @@ sup {
 
 .social {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 
   margin: 0;
   padding: 0;
@@ -662,7 +701,8 @@ sup {
 
 .social-button:active::before {
   background-color: #d7373b;
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .social-button-vk::after {
@@ -757,7 +797,8 @@ sup {
 
   border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
 
   cursor: pointer;
@@ -844,7 +885,13 @@ sup {
 
   display: block;
 
-  user-select: none;
+  -webkit-user-select: none;
+
+     -moz-user-select: none;
+
+      -ms-user-select: none;
+
+          user-select: none;
   cursor: pointer;
 }
 
@@ -911,7 +958,8 @@ sup {
 .grey-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .sorting-catalog {
@@ -921,13 +969,20 @@ sup {
 }
 
 .product-selection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -971,9 +1026,16 @@ sup {
   position: absolute;
 
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   bottom: 0;
   left: 0;
 
@@ -984,6 +1046,8 @@ sup {
 }
 
 .catalog-item:hover .catalog-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1021,8 +1085,12 @@ sup {
 }
 
 .sorting-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin-bottom: 59px;
 
@@ -1045,9 +1113,15 @@ sup {
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   width: 270px;
 }
@@ -1079,8 +1153,11 @@ sup {
 
 .user-sorting {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   top: 20px;
 }
 
@@ -1088,9 +1165,17 @@ sup {
 .sorting-up {
   position: absolute;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   width: 11px;
   height: 11px;
@@ -1117,8 +1202,11 @@ sup {
 }
 
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   margin-bottom: 60px;
@@ -1139,7 +1227,9 @@ sup {
 
 .pagination-item a {
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50px;
   height: 50px;
   padding-top: 17px;
   padding-right: 21px;
@@ -1152,8 +1242,8 @@ sup {
 }
 
 .pagination-item-long a {
-  padding-left: 79px;
-  padding-right: 79px;
+  width: 260px;
+  padding-left: 76px;
 }
 
 .pagination-item-current a {
@@ -1171,7 +1261,9 @@ sup {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+
+          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /* Сеточные стили */
@@ -1196,8 +1288,11 @@ sup {
 
   color: #000000;
   background-color: #ffffff;
-  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  transform: translate(-50%);
+  -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+          box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .modal-close {
@@ -1241,9 +1336,14 @@ sup {
 }
 
 .write-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 760px;
 }
 
@@ -1258,7 +1358,8 @@ sup {
 
 .modal-item input,
 .modal-item textarea {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 360px;
   margin-top: 12px;
   padding-top: 19px;
