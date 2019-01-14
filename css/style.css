@@ -34,7 +34,7 @@ img {
 
 .container {
   width: 1160px;
-  margin: 0 140px;
+  margin: 0 auto;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -110,6 +110,7 @@ img {
   display: block;
   margin-right: 46px;
   padding-top: 25px;
+  padding-bottom: 8px;
 
   color: #000000;
 }
@@ -150,7 +151,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  left: 56%;
+  left: 50%;
   bottom: 106px;
   z-index: 100;
 
@@ -635,13 +636,18 @@ img {
 }
 
 .friends {
-  margin-left: 130px;
+  margin-left: 220px;
+}
+
+.friends p {
+  margin-top: 8px;
+  margin-bottom: 9px;
 }
 
 .friends b {
   margin-bottom: 12px;
 
-  font-size: 35px;
+  font-size: 36px;
   line-height: 1;
   font-weight: 700;
 
@@ -652,7 +658,7 @@ img {
   display: inline-block;
   vertical-align: top;
 
-  width: 260px;
+  width: 182px;
   padding: 0;
 }
 
@@ -662,7 +668,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content: space-between;
 
   margin: 0;
   padding: 0;
@@ -715,19 +721,19 @@ img {
 
 .social-button-vk::after {
   top: 28px;
-  left: 70px;
+  left: 26px;
   background-image: url("../img/vk-icon.svg");
 }
 
 .social-button-fb::after {
-  top: 25px;
-  left: 154px;
+  top: 27px;
+  left: 118px;
   background-image: url("../img/fb-icon.svg");
 }
 
 .social-button-insta::after {
-  top: 27px;
-  left: 243px;
+  top: 28px;
+  left: 208px;
   background-image: url("../img/insta-icon.svg");
 }
 
@@ -750,15 +756,15 @@ img {
 /*catalog.html*/
 
 .page-title {
-  margin-bottom: 63px;
-  padding-top: 82px;
-  padding-bottom: 116px;
+  margin-bottom: 57px;
+  padding-top: 77px;
+  padding-bottom: 108px;
 }
 
 .page-title h1 {
   margin: 0;
 
-  font-size: 54px;
+  font-size: 55px;
   line-height: 1;
   font-weight: 500;
   text-align: center;
@@ -821,7 +827,7 @@ img {
 }
 
 .price-controls {
-  margin-bottom: 62px;
+  margin-bottom: 56px;
 
   font-size: 0;
 }
@@ -837,12 +843,13 @@ img {
 
 .price-controls input {
   width: 60px;
-  margin-left: 10px;
+  margin-left: 7px;
   padding-top: 8px;
   padding-right: 10px;
   padding-bottom: 8px;
   padding-left: 10px;
 
+  text-align: center;
   background: #f1f1f1;
   border: none;
   border-radius: 5px;
@@ -872,8 +879,8 @@ img {
 
 .filter-item ul {
   margin: 0;
-  margin-top: 21px;
-  margin-bottom: 50px;
+  margin-top: 14px;
+  margin-bottom: 47px;
   padding: 0;
 
   font-size: 16px;
@@ -884,8 +891,8 @@ img {
 }
 
 .filter-grid {
-  margin-bottom: 16px;
-  padding-left: 35px;
+  margin-bottom: 22px;
+  padding-left: 37px;
 }
 
 .filter-grid label {
@@ -954,6 +961,7 @@ img {
 }
 
 .grey-button {
+  width: 261px;
   color: #000000;
   background-color: #eeeeee;
 }
@@ -972,7 +980,7 @@ img {
 
 .sorting-catalog {
   width: 760px;
-  margin: 0;
+  margin-top: -15px;
   padding: 0;
 }
 
@@ -1002,7 +1010,7 @@ img {
   vertical-align: top;
 
   width: 360px;
-  margin-bottom: 73px;
+  margin-bottom: 66px;
 }
 
 .catalog-item:nth-child(even) {
@@ -1100,7 +1108,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 
-  margin-bottom: 59px;
+  margin-bottom: 77px;
 
   font-size: 14px;
   font-weight: 400;
@@ -1111,7 +1119,7 @@ img {
 }
 
 .sorting-form h3 {
-  margin-right: 220px;
+  margin-right: 230px;
 
   font-size: 18px;
   font-weight: 700;
@@ -1156,17 +1164,14 @@ img {
 }
 
 .user-sorting {
-  width: 45px;
-}
-
-.user-sorting {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  top: 20px;
+  top: 22px;
+  width: 53px
 }
 
 .sorting-down,
@@ -1218,7 +1223,7 @@ img {
 
   margin: 0;
   margin-bottom: 60px;
-  margin-top: 27px;
+  margin-top: -11px;
   padding: 0;
 
   font-size: 16px;
@@ -1291,9 +1296,9 @@ img {
 
   display: none;
 
-  padding-top: 80px;
+  padding-top: 69px;
   padding-right: 100px;
-  padding-bottom: 80px;
+  padding-bottom: 71px;
   padding-left: 100px;
 
   color: #000000;
@@ -1305,13 +1310,17 @@ img {
           transform: translate(-50%);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-close {
   position: absolute;
-  top: 78px;
-  right: 90px;
+  top: 76px;
+  right: 89px;
 
-  width: 21px;
-  height: 21px;
+  width: 23px;
+  height: 23px;
 
   background-color: #ffffff;
   background-image: url("../img/close-cross.svg");
@@ -1333,7 +1342,7 @@ img {
 
 .modal h2 {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 36px;
 
   font-size: 45px;
   font-weight: 500;
@@ -1342,7 +1351,7 @@ img {
 
 .write-form p {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 }
 
 .write-form {
@@ -1351,17 +1360,16 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
   width: 760px;
 }
 
 .write-form label {
   margin: 0;
-  margin-bottom: 12px;
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1;
 }
@@ -1370,11 +1378,11 @@ img {
 .modal-item textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 360px;
-  margin-top: 12px;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 16px;
+  width: 361px;
+  margin-top: 5px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  padding-left: 13px;
 
   font-size: 16px;
   font-weight: 400;
@@ -1389,8 +1397,8 @@ img {
 
 .modal-item textarea {
   resize: vertical;
-  width: 760px;
-  min-height: 120px;
+  width: 761px;
+  min-height: 119px;
   max-height: 200px;
 }
 
@@ -1404,7 +1412,8 @@ img {
   border: 2px solid #000000;
 }
 
-
-
-
-
+.button-modal {
+  margin-top: 9px;
+  margin-bottom: 10px;
+  width: 261px;
+}

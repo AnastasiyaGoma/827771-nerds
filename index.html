@@ -147,7 +147,7 @@
           <a class="button write-us" href="form.html ">Напишите нам</a>
         </div>
       </div>
-      <img src="img/2-layers.png" width="1440" height="416" alt="Карта студии">
+      <img src="img/2-layers.png" width="1440" height="350" alt="Карта студии">
     </section>
   </main>
 
@@ -156,9 +156,12 @@
     <div class="icons">
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
       <ul class="social">
-        <li><a class="social-button social-button-vk" href="https://vk.com"><span class="visually-hidden">Нёрдс Вконтакте</span></a></li>
-        <li><a class="social-button social-button-fb" href="https://facebook.com"><span class="visually-hidden">Нёрдс на Фейсбук</span></a></li>
-        <li><a class="social-button social-button-insta" href="https://instagram.com"><span class="visually-hidden">Нёрдс в Инстаграм</span></a></li>
+        <li><a class="social-button social-button-vk" href="https://vk.com"><span class="visually-hidden">Нёрдс
+              Вконтакте</span></a></li>
+        <li><a class="social-button social-button-fb" href="https://facebook.com"><span class="visually-hidden">Нёрдс
+              на Фейсбук</span></a></li>
+        <li><a class="social-button social-button-insta" href="https://instagram.com"><span class="visually-hidden">Нёрдс
+              в Инстаграм</span></a></li>
       </ul>
     </div>
 
@@ -168,7 +171,7 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal modal-login">
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     <h2>Напишите нам</h2>
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
@@ -184,10 +187,25 @@
         <label for="letter">Текст письма:<br></label>
         <textarea id="letter" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button button-modal" type="submit">Отправить</button>
     </form>
   </section>
 
+  <script>
+    var write = document.querySelector(".write-us");
+    var popup = document.querySelector(".modal-login");
+    var close = popup.querySelector(".modal-close");
+
+    write.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+  </script>
 </body>
 
 </html>

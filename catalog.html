@@ -61,15 +61,18 @@
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="adaptive" id="name-adaptive" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="adaptive"
+                    id="name-adaptive" checked>
                   <label for="name-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="fix" id="name-fix">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="fix"
+                    id="name-fix">
                   <label for="name-fix">Фиксированная</label>
                 </li>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="rubber" id="name-rubber">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="option" value="rubber"
+                    id="name-rubber">
                   <label for="name-rubber">Резиновая</label>
                 </li>
               </ul>
@@ -78,23 +81,28 @@
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature-slider" id="name-slider" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature-slider"
+                    id="name-slider" checked>
                   <label for="name-slider">Слайдер</label>
                 </li>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature-advantage" id="name-advantage">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="feature-advantage"
+                    id="name-advantage">
                   <label for="name-advantage">Блок преимуществ</label>
                 </li>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" value="feature-news" id="name-news" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" value="feature-news"
+                    id="name-news" checked>
                   <label for="name-news">Новости</label>
                 </li>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" value="feature-gallery" id="name-gallery">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery"
+                    value="feature-gallery" id="name-gallery">
                   <label for="name-gallery">Галерея</label>
                 </li>
                 <li class="filter-grid">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" value="feature-basket" id="name-basket">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" value="feature-basket"
+                    id="name-basket">
                   <label for="name-basket">Корзина</label>
                 </li>
               </ul>
@@ -230,9 +238,12 @@
     <div class="icons">
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
       <ul class="social">
-        <li><a class="social-button social-button-vk" href="https://vk.com"><span class="visually-hidden">Нёрдс Вконтакте</span></a></li>
-        <li><a class="social-button social-button-fb" href="https://facebook.com"><span class="visually-hidden">Нёрдс на Фейсбук</span></a></li>
-        <li><a class="social-button social-button-insta" href="https://instagram.com"><span class="visually-hidden">Нёрдс в Инстаграм</span></a></li>
+        <li><a class="social-button social-button-vk" href="https://vk.com"><span class="visually-hidden">Нёрдс
+              Вконтакте</span></a></li>
+        <li><a class="social-button social-button-fb" href="https://facebook.com"><span class="visually-hidden">Нёрдс
+              на Фейсбук</span></a></li>
+        <li><a class="social-button social-button-insta" href="https://instagram.com"><span class="visually-hidden">Нёрдс
+              в Инстаграм</span></a></li>
       </ul>
     </div>
 
@@ -241,6 +252,42 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+
+  <section class="modal modal-login">
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <h2>Напишите нам</h2>
+    <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-item">
+        <label for="name-surname">Ваше имя:<br></label>
+        <input type="text" name="user-name" id="name-surname" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal-item">
+        <label for="email">Ваш e-mail:<br></label>
+        <input type="text" name="user-email" id="email" placeholder="email@example.com">
+      </p>
+      <p class="modal-item">
+        <label for="letter">Текст письма:<br></label>
+        <textarea id="letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button button-modal" type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <script>
+    var write = document.querySelector(".write-us");
+    var popup = document.querySelector(".modal-login");
+    var close = popup.querySelector(".modal-close");
+
+    write.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+  </script>
 </body>
 
 </html>
