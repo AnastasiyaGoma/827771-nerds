@@ -34,15 +34,21 @@ write.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+  surname.classList.remove("field-error");
+  email.classList.remove("field-error");
+  letterText.classList.remove("field-error");
 });
 
-form.addEventListener("submit",function(evt) {
+form.addEventListener("submit", function (evt) {
+  popup.classList.remove("modal-error");
   surname.classList.remove("field-error");
   email.classList.remove("field-error");
   letterText.classList.remove("field-error");
 
   if (!surname.value || !email.value || !letterText.value) {
     evt.preventDefault();
+    popup.classList.add("modal-error");
 
     if (!surname.value) {
       surname.classList.add("field-error");
@@ -65,9 +71,9 @@ form.addEventListener("submit",function(evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-  evt.preventDefault();
+    evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
-    popup.classList.remove("modal-show");
-  }
+      popup.classList.remove("modal-show");
+    }
   }
 });
